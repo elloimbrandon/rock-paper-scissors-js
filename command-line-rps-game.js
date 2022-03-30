@@ -1,4 +1,3 @@
-
 // Just run node <filename> to paly the game.
 
 const readline = require("readline");

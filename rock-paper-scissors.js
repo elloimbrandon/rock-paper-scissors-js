@@ -1,8 +1,10 @@
 document.getElementById("rock").addEventListener("click", rockFunction);
 document.getElementById("paper").addEventListener("click", paperFunction);
 document.getElementById("scissors").addEventListener("click", scissorsFunction);
-let playerScore = parseInt(document.getElementById('player-score').innerText);
-let computerScore = parseInt(document.getElementById('computer-score').innerText);
+let playerScore = parseInt(document.getElementById("player-score").innerText);
+let computerScore = parseInt(
+  document.getElementById("computer-score").innerText
+);
 const choices = ["Rock", "Paper", "Scissors"];
 let computerFinalChoice = null;
 
@@ -14,6 +16,7 @@ function rockFunction() {
 function paperFunction() {
   const computerFinalChoice = computersChoice();
   compareResults(choices[1], computerFinalChoice);
+  console.log(computerFinalChoice);
 }
 
 function scissorsFunction() {
@@ -31,25 +34,22 @@ function compareResults(choiceArrayPosition, computerFinalChoice) {
     document.querySelector(".result-style").style.color = "green";
     document.querySelector(".result-style").style.display = "flex";
     document.querySelector(".result-style").innerHTML = "You win!";
-    document.getElementById('player-score').innerText = playerScore += 1;
-    
+    document.getElementById("player-score").innerText = playerScore += 1;
   } else if (userInput === "paper" && computerFinalChoice != "scissors") {
     document.querySelector(".result-style").style.color = "green";
     document.querySelector(".result-style").style.display = "flex";
     document.querySelector(".result-style").innerHTML = "You win!";
-    document.getElementById('player-score').innerText = playerScore += 1;
-  }
-  else if (userInput === "scissors" && computerFinalChoice !== "rock"){
+    document.getElementById("player-score").innerText = playerScore += 1;
+  } else if (userInput === "scissors" && computerFinalChoice !== "rock") {
     document.querySelector(".result-style").style.color = "green";
     document.querySelector(".result-style").style.display = "flex";
     document.querySelector(".result-style").innerHTML = "You win!";
-    document.getElementById('player-score').innerText = playerScore += 1;
-  }
-  else {
+    document.getElementById("player-score").innerText = playerScore += 1;
+  } else {
     document.querySelector(".result-style").style.color = "red";
     document.querySelector(".result-style").style.display = "flex";
     document.querySelector(".result-style").innerHTML = "You lose";
-    document.getElementById('computer-score').innerText = computerScore += 1;
+    document.getElementById("computer-score").innerText = computerScore += 1;
   }
   return;
 }
