@@ -1,19 +1,5 @@
-// Things to keep in mind
 
-// grabbing information from html input and storing in varible.
-// const h1ID = document.querySelector('h1').getAttribute('id');
-
-// document.querySelector('#title').setAttribute('class', 'blue');
-// This would give the element with the ID of "title" a class of "blue."
-
-// document.querySelectorAll('p').removeAttribute('class');
-// This would remove the class attribute from all <p> elements
-
-// Creates DOM/HTML "Error example"
-// const paragraph = document.createElement('p');
-// paragraph.innerText = "Your passwords did not match.";
-// paragraph.setAttribute("class", "registration-error");
-
+// Just run node <filename> to paly the game.
 
 const readline = require("readline");
 
