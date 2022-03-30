@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Indie+Flower&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url("https://img.freepik.com/free-vector/abstract-modern-white-grey-gradient-geometric-pattern-background-website-banner-card_120819-392.jpg?w=2000");
+  background-color: black;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: lighter;
+  text-decoration: underline;
+  font-size: 33px;
+  margin: auto;
+}
+
+.score-font {
+  font-family: 'Indie Flower', cursive;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 25px;
+}
+
+.game-discription {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: lighter;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline overline solid lightblue;
+}
+
+.main-container {
+  display: flex;
+  height: 100%;
+  max-width: 500px;
+  /* wow this margin tag worked great */
+  margin: auto;
+  border: 1.5px solid black;
+  padding-bottom: 5px;
+  padding-top: 10px; 
+  border-radius: 20px;
+  box-shadow: 10px 5px 5px lightgray;
+}
+
+.choice-row {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  border-right: 3px solid black;
+  width: 50%;
+  padding-right: 70px;
+}
+
+.computer-choice-row {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 35px;
+  padding-top: 10px;
+  margin-top: 2px;
+}
+
+.test-button {
+  display: block;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  height: 125px;
+  width: 125px;
+  border: .5px solid black;
+  box-shadow: 8px 4px 4px lightgrey;
+}
+
+#rock {
+  background-image: url("https://www.shareicon.net/data/512x512/2016/11/14/851912_hand-o-rock_512x512.png");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110px;
+}
+
+#paper {
+  background-image: url("https://www.shareicon.net/data/512x512/2016/02/29/726566_hand_512x512.png");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110px;
+}
+
+#scissors {
+  background-image: url("https://www.shareicon.net/data/512x512/2016/11/14/851911_hand-o-scissors_512x512.png");
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 110px;
+}
+
+.computer-choice-title {
+  display: flex;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: lighter;
+  justify-content: center;
+  text-decoration: underline;
+  font-size: 30px;
+  padding-bottom: 103px;
+}
+
+.choice-description {
+  display: flex;
+  justify-content: center;
+  font-family: 'Indie Flower', cursive;
+  font-weight: lighter;
+  margin: auto;
+  font-size: 20px;
+  text-decoration: underline;
+  padding-left: 50px;
+  padding-bottom: 2px;
+}
+
+img {
+  border-radius: 20px;
+  padding: 5px;
+  width: 150px;
+}
+
+.computer-choice-image {
+  display: flex;
+  border: 1px solid black;
+  box-shadow: 8px 4px 4px lightgrey;
+  border-radius: 20px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.result-style {
+  /* make flex and green if win */
+  display: none;
+  color:red;
+}
+
+#player-score {
+  margin-left: 20px;
+  color: green;
+}
+#computer-score {
+  margin-left: 20px;
+  color: red;
+}
+
+.hover-button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 2px 1px lightblue;
+}
