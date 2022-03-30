@@ -23,7 +23,6 @@ html {
 .score-font {
   font-family: 'Indie Flower', cursive;
   text-decoration: none;
-  font-weight: lighter;
   font-size: 25px;
 }
 
@@ -46,7 +45,7 @@ html {
   max-width: 500px;
   /* wow this margin tag worked great */
   margin: auto;
-  border: 1.5px solid black;
+  border: 1px solid black;
   padding-bottom: 5px;
   padding-top: 10px; 
   border-radius: 20px;
@@ -120,7 +119,6 @@ html {
   display: flex;
   justify-content: center;
   font-family: 'Indie Flower', cursive;
-  font-weight: lighter;
   margin: auto;
   font-size: 20px;
   text-decoration: underline;
@@ -144,7 +142,6 @@ img {
 }
 
 .result-style {
-  /* make flex and green if win */
   display: none;
   color:red;
 }
